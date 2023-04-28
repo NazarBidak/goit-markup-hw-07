@@ -471,7 +471,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* align-items: baseline; */
 }
 .footer-link {
   font-family: Raleway, sans-serif;
@@ -613,10 +612,6 @@ body {
   background-color: #404bbf;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-}
-
-.footer-subscribe {
-  display: flex;
 }
 .subscribe-form {
   display: flex;
@@ -961,9 +956,6 @@ body {
         url(../images/people-office-tab-2x.jpg);
     }
   }
-  .footer-subscribe {
-    margin-left: auto;
-  }
 }
 
 @media screen and (min-width: 768px) {
@@ -1062,7 +1054,6 @@ body {
     gap: 72px 24px;
   }
   .customers-link {
-    /* width: 168px; */
   }
   .customers-item {
     width: 168px;
@@ -1070,30 +1061,28 @@ body {
   }
 
   .footer-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 72px 24px;
+    text-align: left;
+    align-items: start;
+    padding: 0 108px;
   }
   .footer-wrap {
     width: 208px;
     align-items: normal;
-  }
-  .footer-wrapper {
-    display: flex;
-    width: 552px;
+    margin-bottom: 0;
   }
   .footer-box {
     width: 264px;
     margin-right: 24px;
     align-items: normal;
+    margin-bottom: 0;
   }
   .footer-text {
     max-width: 264px;
   }
-  .footer-subscribe {
-    margin-right: auto;
-    width: 552px;
-  }
+
   .subscribe-form {
     display: flex;
     align-items: normal;
@@ -1193,7 +1182,10 @@ body {
   }
   .footer-container {
     display: flex;
-    align-items: baseline;
+    align-items: stretch;
+    gap: unset;
+    flex-wrap: nowrap;
+    padding: 0 15px;
   }
   .footer-box {
     margin-right: 120px;
@@ -1205,18 +1197,12 @@ body {
   .footer-wrap {
     display: inline-block;
     margin-bottom: 0;
-  }
-  .footer-wrapper {
-    width: auto;
+    margin-right: 80px;
   }
   .subscribe-input {
     width: 264px;
     margin-right: 24px;
     margin-bottom: 0;
-  }
-  .footer-subscribe {
-    display: block;
-    width: auto;
   }
   .subscribe-wrap {
     display: flex;
